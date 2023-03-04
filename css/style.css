@@ -1,0 +1,268 @@
+/* index */
+.header{
+	height: auto;
+}
+.logo{
+	max-height: 100%;
+	padding: 5px 15px;
+}
+.icon{
+	max-height: 100%;
+	padding: 5px 15px;
+	float:right;
+}
+.topo_header{
+	background: #fff;
+	position: relative;
+	display: block;
+	height: 3em;
+}
+.baixo_header{
+	background: #000;
+	position: relative;
+	height: 11em;
+}
+.menu_header{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background: #fff;
+	height: 3em;
+}
+.menu_header td{
+	color:  #919191;
+	border-left: 1px gray;
+	height: 100%;
+	width: auto;
+	padding: 0 2em;
+	font-size: 1.2em;
+}
+.linha_vertical{
+	padding: 0 !important;
+	height: 50% !important;
+	width: 1px !important;
+	background: #919191;
+}
+.linha_horizontal{
+	padding: 0 !important;
+	height: 1px !important;
+	width: 1em !important;
+	background: #919191;
+}
+.produtos_tela_principal{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.lancamentos{
+	margin: 2em 0;
+	font-weight: 500;
+    line-height: 1.2;
+	font-size: 40px;
+}
+.lancamentos::before, .lancamentos::after{
+	vertical-align:  middle;
+	text-align: center;
+	width: 1.8em;
+	height: 1px;
+	margin: 0 6px;
+	display: inline-block;
+	content: "";
+	background: black;
+}
+.itens{
+	width: 85%;
+	margin: 0 10%;
+	max-height: 100%;
+	display:flex;
+	flex-flow:wrap ;
+}
+
+.caixa{
+	/*background-color: rgb(114, 114, 114);*/
+	margin: 0 1px;
+	width: 33%;
+}
+.caixa:hover{
+	box-shadow: 0px 0px 1px 0px #8b8b8b;
+}
+.item{
+	overflow: hidden;
+	display: inline-flex;
+
+}
+.tenis1{
+	max-width: 100%;
+	transition: transform 1s ease .1s,-webkit-transform 1s ease .1s;
+}
+.item:hover> .tenis1{
+	position: relative;
+	transform: translateX(-100%);
+	
+}
+.tenis2{
+	max-width: 100%;
+	transition: transform 1s ease .1s;
+}
+.item:hover> .tenis2{
+	position: relative;
+	transform: translateX(-100%);
+	
+}
+
+.tituloTenis, .tituloTenis:hover{
+	padding: 0 5px;
+	font-size: 25px;
+	text-decoration: none;
+	color: black;
+}
+.valor, .valor:hover{
+	padding-top: 30px;
+	font-weight: 500;
+	text-align: center;
+	font-size: 30px;
+	margin:0;
+	color: black;
+}
+
+.parcela, .parcela:hover{
+	padding-top: 5px;
+	padding-left: 5px;
+	font-size: 20px;
+	text-align: center;
+	margin:0;
+	color: black;
+}
+
+.preco{
+	height:auto;
+}
+
+.olhadinha{
+	background-color: red;
+    height: 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .65s ease .1s;
+    transform: scaleY(0);
+    position: relative;
+
+}
+.aCaixa:hover> .olhadinha	{
+	transform: scaleY(1);
+}
+.txtOlhadinha{
+	color:white;
+	text-transform: uppercase;
+	font-size: 27px;
+	font-weight: 500;
+}
+a{
+	text-decoration: none;
+}
+
+
+/*item*/
+.menucategorias{
+	height: 3em;
+	background-color: black;
+}
+.menu_headerItem{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 3em;
+}
+.menu_headerItem td{
+	color:  white;
+	height: 100%;
+	width: auto;
+	padding: 0 2em;
+	font-size: 1.2em;
+}
+.caixaItem{
+	margin: 0 3em;
+	height: auto;
+	display: inline-FLEX;
+}
+.imagensTenis{
+	max-width: 50%;
+}
+.imagemPrincipal{
+	max-width: 90%;
+}
+.imagemPrincipal:hover{
+	transform: scale(150%);
+}
+.outrasImagens{
+	height:auto;
+	width: 100%;
+	position: relative;
+}
+.outrasImagens img{
+	max-width: 20%;
+	cursor: pointer;
+}
+.outrasImagens img:hover{
+	filter: contrast(0.9);
+}
+.imagemSelecionada{
+	filter: contrast(0.9);
+}
+.infoItem{
+	width: 60%;
+	display: flex;
+	align-content	: center;
+	flex-flow: wrap;
+	padding-left: 3em;
+}
+.tituloTenisItem, .tituloTenisItem:hover{
+	padding-bottom: 1em;
+	font-size: 25px;
+	text-decoration: none;
+	color: black;
+	width: 100%;
+}
+.valorItem, .valorItem:hover{
+	
+	font-weight: 500;
+	font-size: 30px;
+	margin:0;
+	color: black;
+	width: 100%;
+}
+
+.parcelaItem, .parcelaItem:hover{
+	font-size: 20px;
+	margin:0;
+	width: 100%;	
+	color: black;
+}
+.comprar{
+	background-color: red;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 500;
+	font-size:27px;
+	border: none;	
+	width:80%;
+}
+.tamanhos{
+	width: 100%;
+	margin-bottom: 2em;
+}
+.tamanhos button{
+	border: 1px;
+    border-style: solid;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 3px;
+	background-color: white;
+}
+.tamanhoSelecionado{
+	background-color: #dbdbdb!important;
+}
